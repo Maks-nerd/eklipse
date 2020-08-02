@@ -1,0 +1,2991 @@
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: ProximaNovaBold;
+  src: url(../fonts/ProximaNovaBold.otf);
+}
+@font-face {
+  font-family: ProximaNovaRegular;
+  src: url(../fonts/ProximaNovaRegular.otf);
+}
+@font-face {
+  font-family: ProximaNovaLight;
+  src: url(../fonts/ProximaNovaLight.otf);
+}
+@font-face {
+  font-family: ProximaNovaBlack;
+  src: url(../fonts/ProximaNovaBlack.otf);
+}
+@font-face {
+  font-family: ProximaNovaRegularItalic;
+  src: url(../fonts/ProximaNovaRegularItalic.otf);
+}
+@font-face {
+  font-family: ProximaNovaBoldItalic;
+  src: url(../fonts/ProximaNovaBoldItalic.otf);
+}
+@font-face {
+  font-family: MullerBold;
+  src: url(../fonts/MullerBold.otf);
+}
+@font-face {
+  font-family: MullerBlackItalic;
+  src: url(../fonts/MullerBlackItalic.otf);
+}
+@font-face {
+  font-family: ProximaNovaThin;
+  src: url(../fonts/ProximaNovaThin.otf);
+}
+ul{
+  padding: 0;
+  margin: 0;
+}
+a{
+  text-decoration: none;
+}
+body{
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+.wrapper{
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+.wrapper2{
+  width: 1170px;
+  margin: 0 auto;
+}
+.clear{
+  clear: both;
+}
+.header{
+  background: url(../img/header.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.header .menu{
+  background: #000;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 102;
+}
+.header .menu ul{
+  text-align: center;
+}
+.header .menu ul li{
+  display: inline-block;
+  text-align: center;
+  width: 12%;
+}
+.header .menu ul li a{
+  color: #fff;
+  font: 15px 'ProximaNovaBold';
+}
+.header .menu ul li a:hover{
+  color: #feef74;
+}
+.header .info{
+  background: rgba(0,0,0,0.65);
+  position: relative;
+  padding-top: 70px;
+}
+.header .info .line{
+  width: 97%;
+  margin: 0 auto;
+  padding-bottom: 5px;
+  border-bottom: 4px solid #ffe388;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.header .info .logo li{
+  display: inline-block;
+  vertical-align: top;
+}
+.header .info .logo li a{
+  margin-left: 17px;
+}
+.header .info .logo li p{
+  font: 16px 'ProximaNovaRegular';
+  color: #fff;
+  max-width: 260px;
+  margin-top: 25px;
+  margin-left: 40px;
+  letter-spacing: 1px;
+}
+.header .info .logo li p strong{
+  font: 14px 'ProximaNovaLight';
+  letter-spacing: 3px;
+}
+.header .info .adress{
+  float: right;
+  margin-top: 22px;
+  text-align: right;
+}
+.header .info .adress li{
+  display: inline-block;
+  vertical-align: top;
+}
+.header .info .adress li p{
+  font: 14px 'ProximaNovaRegular';
+  color: #fff;
+  margin-right: 45px;
+  letter-spacing: 0.6px;
+}
+.header .info .adress li p a:first-child{
+  display: block;
+  color: #fff;
+  font: 24px 'ProximaNovaBlack';
+  letter-spacing: 2px;
+}
+.header .info .adress li p a:nth-child(2){
+  color: #f3e56f;
+  font: 14px 'ProximaNovaRegular';
+  border-bottom: 1px dashed #f3e56f;
+}
+.header .info .adress li p a:nth-child(2):hover{
+  color: #fff;
+}
+.header .info .adress li:nth-child(2) a{
+  margin-right: 11px;
+}
+.header .wrapper h1{
+  text-transform: uppercase;
+  text-align: center;
+  font: 65px 'ProximaNovaBlack';
+  color: #fff;
+  letter-spacing: 3.7px;
+  margin-top: 65px;
+}
+.header .wrapper h2{
+  text-align: center;
+  font: 40px 'ProximaNovaRegular';
+  color: #fff;
+  margin-top: 15px;
+  letter-spacing: 2px;
+}
+.header .wrapper span.price{
+  display: block;
+  text-align: center;
+  color: #ffed73;
+  text-transform: uppercase;
+  font: 55px 'ProximaNovaBlack';
+  border: 1px solid #ffed73;
+  max-width: 695px;
+  margin: 0 auto;
+  padding: 5px;
+  letter-spacing: 6px;
+}
+.booking{
+  position: relative;
+  padding-bottom: 269px;
+}
+.booking .wrapper2{
+  background: url(../img/booking.jpg) no-repeat center;
+  background-size: cover;
+  padding: 45px 0px 40px 32px;
+  margin-top: 135px;
+  box-shadow: 0px 24px 42px -10px rgba(98,98,98,1);
+  -webkit-box-shadow: 0px 24px 42px -10px rgba(98,98,98,1);
+  -moz-box-shadow: 0px 24px 42px -10px rgba(98,98,98,1);
+  /*  position: relative;*/
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: -83px;
+}
+
+.booking .wrapper2 .left{
+  display: inline-block;
+  vertical-align: top;
+}
+.booking .wrapper2 .left .jq-selectbox{
+  margin-top: 18px;
+}
+.booking .wrapper2 .right{
+  display: inline-block;
+  vertical-align: top;
+  /*  margin-top: 18px;*/
+  margin-left: 15px;
+  display: inline-block;
+  position: absolute;
+  right: 5px;
+}
+.booking .wrapper2 .right .jq-selectbox{
+  margin-top: 9px;
+}
+.booking .wrapper2 img[alt='car']{
+  margin-top: 25px;
+  margin-left: 12px;
+  position: absolute;
+}
+.booking .wrapper2 strong{
+  font: 24px 'ProximaNovaBold';
+  display: block;
+  max-width: 365px;
+  letter-spacing: 0.7px;
+}
+.booking .wrapper2 strong span{
+  font: 24px 'ProximaNovaBold';
+  color: #ff1200;
+}
+.booking .wrapper2 b{
+  font: 16px 'ProximaNovaRegularItalic';
+  color: #ff1200;
+  display: block;
+  margin-top: 24px;
+  letter-spacing: 0.5px;
+}
+.booking .wrapper2 b span{
+  font: 16px 'ProximaNovaBoldItalic';
+  color: #ff1200;
+}
+.booking .wrapper2 input{
+  font: 16px 'ProximaNovaRegular';
+  color: #525252;
+  background: #fff;
+  margin-right: 20px;
+  padding: 15px 18px 15px 18px;
+  position: relative;
+  width: 160px;
+}
+.booking .wrapper2 label{
+  position: relative;
+}
+.booking .wrapper2 label:after{
+  content: "";
+  display: block;
+  background: url(../img/calendar.png);
+  position: absolute;
+  width: 18px;
+  height: 19px;
+  top: -2px;
+  right: 35px;
+}
+.booking .wrapper2 a{
+  display: block;
+  padding: 0;
+  background: linear-gradient(to top, #fdd143, #fff179);
+  font: 18px 'ProximaNovaBold';
+  text-align: center;
+  padding: 23px 0;
+  border-radius: 5px;
+  box-shadow: 0px 3px 0px 0px rgba(204,161,22,0.9),  0px 24px 22px -10px rgba(0,0,0,1);
+  -webkit-box-shadow: 0px 3px 0px 0px rgba(204,161,22,0.9),  0px 24px 22px -10px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 3px 0px 0px rgba(204,161,22,0.9),  0px 24px 22px -10px rgba(0,0,0,1);
+  position: relative;
+  margin-top: 10px;
+  letter-spacing: 1px;
+  color: #525252;
+  width: 340px;
+  border: none;
+}
+.booking .wrapper2 a:hover{
+  cursor: pointer;
+}
+.booking .wrapper2 a:after{
+  display: none;
+}
+.booking .wrapper2 a span{
+  width: 98%;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  left: 3px;
+  top: 1px;
+}
+.lists{
+  background: #f4f4f4;
+  padding-top: 165px;
+  padding-bottom: 65px;
+}
+.lists ul{
+  text-align: center;
+}
+.lists ul li{
+  display: inline-block;
+  vertical-align: top;
+  width: 23.5%;
+  height: 333px;
+  background: #fff;
+  /*  margin-left: 25px;*/
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+.lists ul li .hover{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background: #ff8400;
+  display: none;
+  padding-top: 100px;
+  top: 100%;
+  opacity: 0;
+  display: block;
+  transition: .3s linear;
+}
+.lists ul li .hover p{
+  font: 15px 'MullerBold';
+  color: #fff;
+  max-width: 212px;
+  line-height: 24px;
+}
+.lists ul li:hover .hover{
+  opacity: 1;
+  top: 0;
+  transition: .3s linear;
+}
+.lists ul li .obertka{
+  width: 270px;
+  height: 226px;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto 27px;
+}
+.lists ul li .obertka img{
+  object-fit: cover;
+}
+.lists ul li .obertka .images{
+  position: absolute;
+  top: 75px;
+  left: 0px;
+  right: 0;
+  width: 85px;
+  margin: 0 auto;
+}
+.lists ul li p{
+  font: 16px 'ProximaNovaRegular';
+  color: #000;
+  text-align: center;
+  max-width: 180px;
+  margin: 0 auto;
+  line-height: 23px;
+  letter-spacing: 0.5px;
+}
+.statistics{
+  background: url(../img/statistics.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.statistics .ob{
+  background: url(../img/statistics.png) no-repeat center;
+  background-size: cover;
+  background-color: rgba(0,0,0,0.5);
+  padding-top: 90px;
+  padding-bottom: 73px;
+}
+.statistics h2{
+  font: 40px 'ProximaNovaBlack';
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+.statistics p{
+  font: 24px 'ProximaNovaLight';
+  color: #fff;
+  text-align: center;
+  margin-top: 15px;
+  letter-spacing: 0.7px;
+}
+.statistics ul{
+  text-align: center;
+  margin-top: 90px;
+}
+.statistics ul li{
+  display: inline-block;
+  vertical-align: top;
+  width: 19%;
+  text-align: left;
+  margin-left: 5px;
+}
+.statistics ul li span{
+  font: 16px 'ProximaNovaRegular';
+  color: #fff;
+  display: block;
+  max-width: 170px;
+  line-height: 24px;
+  margin: 0 auto;
+}
+.statistics ul li span b{
+  font: 48px 'MullerBlackItalic';
+  background: linear-gradient(to top, #fdd041, #fff27a);
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+.rooms{
+  padding-bottom: 90px;
+  padding-top: 95px;
+}
+.rooms h2{
+  font: 36px 'ProximaNovaBlack';
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3.5px;
+}
+.rooms p{
+  font: 20px 'ProximaNovaLight';
+  text-align: center;
+  max-width: 1115px;
+  margin: 15px auto 0;
+  letter-spacing: 0px;
+  line-height: 36px;
+}
+.rooms ul{
+  text-align: center;
+  margin-top: 58px;
+}
+.rooms ul li{
+  text-align: center;
+  vertical-align: top;
+  display: inline-block;
+  width: 22.5%;
+  border: 1px solid #f4f4f4;
+  margin-right: 17px;
+}
+.rooms ul li a + a{display: none;}
+.rooms ul li .obertka{
+  width: 270px;
+  height: 255px;
+  display: block;
+  overflow: hidden;
+  margin-bottom: 35px;
+}
+.rooms ul li b{
+  font: 24px 'ProximaNovaBold';
+  display: block;
+  margin-bottom: 7px;
+  color: #000;
+}
+.rooms ul li i{
+  font: 24px 'ProximaNovaBlack';
+  color: #ff1200;
+}
+.rooms ul li strong{
+  font: 16px 'ProximaNovaThin';
+  display: block;
+  line-height: 24px;
+  max-width: 210px;
+  margin: 7px auto 40px;
+  color: #000;
+}
+.rooms ul li label{
+  display: block;
+  border-top: 1px solid #f4f4f4;
+  padding: 17px;
+  color: #000;
+}
+.rooms a.more{
+  display: block;
+  padding: 0;
+  background: linear-gradient(to top, #fdd143, #fff179);
+  font: 18px 'ProximaNovaBold';
+  text-align: center;
+  padding: 23px 0;
+  border-radius: 5px;
+  box-shadow: 0px 3px 0px 0px rgba(204,161,22,0.9),  0px 24px 22px -10px rgba(0,0,0,1);
+  -webkit-box-shadow: 0px 3px 0px 0px rgba(204,161,22,0.9),  0px 24px 22px -10px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 3px 0px 0px rgba(204,161,22,0.9),  0px 24px 22px -10px rgba(0,0,0,1);
+  position: relative;
+  margin-top: 10px;
+  letter-spacing: 1px;
+  width: 369px;
+  color: #000;
+  margin: 55px auto 0;
+}
+.rooms a.more span{
+  width: 98%;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  left: 3px;
+  top: 1px;
+}
+.details{
+  background: #f4f4f4;
+  padding-top: 94px;
+  padding-bottom: 97px
+}
+.details h2{
+  font: 37px 'ProximaNovaBlack';
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+.details p{
+  font: 20px 'ProximaNovaLight';
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+.details ul.selection{
+  text-align: center;
+  margin-top: 45px;
+}
+.details ul.selection li{
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  margin-right: 7px;
+  margin-left: 5px;
+}
+.details ul.selection li a{
+  font: 16px 'ProximaNovaBold';
+  color: #000;
+  background: #fff;
+  padding: 6px 15px;
+}
+.details ul.selection li a:hover, .details ul.selection li a.active{
+  background: #ff8400;
+}
+.details ul.foto{
+  margin-top: 58px;
+  text-align: center;
+}
+.details ul.foto li{
+  display: inline-block;
+  vertical-align: top;
+  width: 32%;
+  text-align: center;
+  margin-bottom: 27px;
+  position: relative;
+}
+.details ul.foto li .ob{
+  width: 100%;
+  height: 282px;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(237,124,5,0.9);
+  padding-top: 93px;
+}
+.details ul.foto li:hover .ob{
+  display: block;
+  cursor: pointer;
+}
+.details ul.foto li a{
+  width: 100%;
+  height: 282px;
+  display: block;
+  overflow: hidden;
+}
+.details ul.foto li a .obertka img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.details a.more{
+  display: block;
+  padding: 0;
+  background: linear-gradient(to top, #fdd143, #fff179);
+  font: 18px 'ProximaNovaBold';
+  text-align: center;
+  padding: 23px 0;
+  border-radius: 5px;
+  box-shadow: 0px 3px 0px 0px rgba(204,161,22,0.9),  0px 24px 22px -10px rgba(0,0,0,1);
+  -webkit-box-shadow: 0px 3px 0px 0px rgba(204,161,22,0.9),  0px 24px 22px -10px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 3px 0px 0px rgba(204,161,22,0.9),  0px 24px 22px -10px rgba(0,0,0,1);
+  position: relative;
+  margin-top: 10px;
+  letter-spacing: 1px;
+  width: 369px;
+  color: #000;
+  margin: 50px auto 0;
+}
+.details a.more span{
+  width: 98%;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  left: 3px;
+  top: 1px;
+}
+.beside{
+  padding-top: 100px;
+  padding-bottom: 72px;
+}
+.beside h2{
+  font: 36px 'ProximaNovaBlack';
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.3px;
+}
+.beside p{
+  text-align: center;
+  font: 20px 'ProximaNovaLight';
+  margin-top: 20px;
+  letter-spacing: 0.5px;
+}
+.beside ul{
+  text-align: center;
+  margin-top: 62px;
+}
+.beside ul li{
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  width: 32%;
+  position: relative;
+  height: 433px;
+}
+.beside ul li .obertka{
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.beside ul li:nth-child(2) a:nth-child(2){
+  position: absolute;
+  display: block;
+  bottom: 0;
+  width: 100%;
+}
+.beside ul li .obertka img{
+  /*  width: 100%;*/
+  height: 100%;
+  object-fit: cover;
+}
+.beside ul li:nth-child(2) .obertka{
+  display: block;
+  width: 100%;
+  height: 201px;
+  overflow: hidden;
+  position: relative;
+  /*  margin-bottom: 30px;*/
+}
+.beside ul li strong{
+  font: 24px 'ProximaNovaBlack';
+  text-transform: uppercase;
+  color: #fff;
+  display: block;
+  letter-spacing: 3px;
+  margin-bottom: 13px;
+}
+.beside ul li p{
+  font: 18px 'ProximaNovaRegular';
+  color: #fff;
+  position: absolute;
+  top: 26px;
+  text-align: left;
+  max-width: 205px;
+  letter-spacing: 0.5px;
+}
+.beside ul li:first-child p{
+  left: 27px;
+}
+.beside ul li:nth-child(2n) p{
+  margin: 0 auto;
+  left: 0;
+  top: 60px;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+}
+.beside ul li:nth-child(3n) p{
+  right: 20px;
+  top: 265px;
+  max-width: 230px;
+  text-align: right;
+}
+.beside ul li:nth-child(3n) strong{
+  letter-spacing: 1px;
+}
+.beside ul li:nth-child(3n) .images{
+  width: 135px;
+  position: absolute;
+  top: 50px;
+  left: 0;
+}
+.beside ul li:nth-child(3n) .images img{
+  display: block;
+  text-align: center;
+  margin: 0 auto 25px;
+}
+.book{
+  background: url(../img/book.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 93px;
+  padding-bottom: 93px;
+  text-align: center;
+}
+.book h2{
+  font: 36px 'ProximaNovaBlack';
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+.book h2 span{
+  color: #ffed73;
+  font: 36px 'ProximaNovaBlack';
+  border: 1px solid #ffed73;
+  padding: 3px;
+  margin-left: 5px;
+}
+.book i{
+  color: #fff;
+  font: 20px 'ProximaNovaRegularItalic';
+  text-align: center;
+  display: block;
+  letter-spacing: 0.5px;
+  margin-bottom: 60px;
+}
+.book i b{
+  color: #fff;
+  font: 20px 'ProximaNovaBoldItalic';
+}
+.book label{
+  position: relative;
+}
+.book label:after{
+  content: "";
+  display: block;
+  background: url(../img/calendar.png);
+  position: absolute;
+  width: 18px;
+  height: 19px;
+  top: -2px;
+  right: 15px;
+}
+.book input{
+  font: 16px 'ProximaNovaRegular';
+  color: #525252;
+  background: #fff;
+  margin-left: 15px;
+  padding: 15px 18px 15px 18px;
+  position: relative;
+  width: 160px;
+}
+.book .calendar{
+  display: inline-block;
+}
+.book .jq-selectbox{
+  margin-left: 10px;
+  text-align: left;
+}
+.book a.more{
+  display: block;
+  padding: 0;
+  background: linear-gradient(to top, #fdd143, #fff179);
+  font: 18px 'ProximaNovaBold';
+  text-align: center;
+  padding: 23px 0;
+  border-radius: 5px;
+  box-shadow: 0px 3px 0px 0px rgba(204,161,22,0.9),  0px 24px 22px -10px rgba(0,0,0,1);
+  -webkit-box-shadow: 0px 3px 0px 0px rgba(204,161,22,0.9),  0px 24px 22px -10px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 3px 0px 0px rgba(204,161,22,0.9),  0px 24px 22px -10px rgba(0,0,0,1);
+  position: relative;
+  margin-top: 10px;
+  letter-spacing: 1px;
+  width: 369px;
+  color: #000;
+  margin: 28px auto 0;
+  border: none;
+  outline: none;
+}
+.book a.more:hover{
+  cursor: pointer;
+}
+.book a.more span{
+  width: 98%;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  left: 3px;
+  top: 1px;
+}
+.book a.more:after{
+  display: none;
+}
+.free{
+  padding-top: 97px;
+  padding-bottom: 25px;
+}
+.free h2{
+  font: 36px 'ProximaNovaBlack';
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3.5px;
+  margin-bottom: 20px;
+}
+.free p{
+  font: 20px 'ProximaNovaLight';
+  text-align: center;
+  letter-spacing: 0.5px;
+  line-height: 29px;
+}
+.free p span{
+  font: 20px 'ProximaNovaBold';
+  text-transform: uppercase;
+}
+.free .get{
+  width: 86.5%;
+  margin-left: 18px;
+  margin-top: 60px;
+  background: #eeeeee;
+  padding-left: 70px;
+  padding-top: 80px;
+  position: relative;
+}
+.free .get:after{
+  content: '';
+  position: absolute;
+  top: -10px;
+  right: -132px;
+  width: 334px;
+  height: 857px;
+  background: url(../img/free.png) no-repeat center;
+}
+.free .get ul li{
+  display: inline-block;
+  vertical-align: top;
+  width: 41%;
+  margin-bottom: 112px;
+}
+.free .get ul li:nth-child(2n){
+  margin-left: 0px;
+}
+.free .get ul li .obertka{
+  width: 85px;
+  height: 85px;
+  background: #ff8400;
+  text-align: center;
+  float: left;
+  margin-right: 15px;
+}
+.free .get ul li .obertka img{
+  margin-top: 25%;
+}
+.free .get ul li p{
+  font: 16px 'ProximaNovaRegular';
+  text-align: left;
+  line-height: 23px;
+  overflow: hidden;
+}
+.free .get ul li i{
+  font: 16px 'ProximaNovaThin';
+  display: block;
+}
+.clients{
+  background: url(../img/clients.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  text-align: center;
+}
+.clients h2{
+  color: #fff;
+  font: 36px 'ProximaNovaBlack';
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+}
+.clients span{
+  color: #fff;
+  font: 20px 'ProximaNovaLight';
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+.clients p{
+  text-align: center;
+  font: 30px 'ProximaNovaRegular';
+  color: #fff;
+  max-width: 875px;
+  margin: 60px auto 20px;
+  letter-spacing: 1px;
+  line-height: 45px
+}
+.clients a{
+  text-align: center;
+  color: #ffed73;;
+  font: 36px 'ProximaNovaBlack';
+  letter-spacing: 3px;
+  border: 1px solid #ffed73;
+  padding: 15px;
+}
+.reviews{
+  background: #f4f4f4;
+  padding-top: 95px;
+  padding-bottom: 95px;
+}
+.reviews h2{
+  text-align: center;
+  text-transform: uppercase;
+  font: 37px 'ProximaNovaBlack';
+  letter-spacing: 4px;
+}
+.reviews span{
+  margin-top: 20px;
+  display: block;
+  text-align: center;
+  font: 20px 'ProximaNovaLight';
+  letter-spacing: 0.5px;
+}
+.reviews ul{
+  text-align: center;
+  margin-top: 30px;
+}
+.reviews ul.slides li ul li{
+  display: inline-block;
+  vertical-align: top;
+  width: 47.5%;
+  text-align: left;
+  margin-right: -5px
+}
+.reviews ul.slides li ul li:nth-child(2n){
+  margin-left: 30px;
+}
+.reviews li p{
+  background: #ffe388;
+  font: 18px 'ProximaNovaRegular';
+  padding: 30px 30px;
+  line-height: 30px;
+  position: relative;
+}
+.reviews li p:after{
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -14px;
+  left: 50px;
+  background: url(../img/arrow.png) no-repeat center;
+  width: 14px;
+  height: 14px;
+}
+.reviews li .obertka{
+  width: 100px;
+  height: 100px;
+  display: block;
+  overflow: hidden;
+  margin-top: 45px;
+  float: left;
+  margin-right: 30px;
+}
+.reviews li strong{
+  font: 20px 'ProximaNovaBold';
+  display: block;
+  margin-top: 63px;
+  margin-bottom: 10px;
+}
+.reviews li i{
+  font: 18px 'ProximaNovaLight';
+}
+.reviews a.more{
+  display: block;
+  padding: 0;
+  background: linear-gradient(to top, #fdd143, #fff179);
+  font: 18px 'ProximaNovaBold';
+  text-align: center;
+  padding: 23px 0;
+  border-radius: 5px;
+  box-shadow: 0px 3px 0px 0px rgba(204,161,22,0.9),  0px 24px 22px -10px rgba(0,0,0,1);
+  -webkit-box-shadow: 0px 3px 0px 0px rgba(204,161,22,0.9),  0px 24px 22px -10px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 3px 0px 0px rgba(204,161,22,0.9),  0px 24px 22px -10px rgba(0,0,0,1);
+  position: relative;
+  margin-top: 10px;
+  letter-spacing: 1px;
+  width: 369px;
+  color: #000;
+  margin: 158px auto 0;
+}
+.reviews a.more span{
+  width: 98%;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  left: 3px;
+  top: 1px;
+  margin-top: 0;
+}
+.as{
+  padding-top: 94px;
+  padding-bottom: 80px;
+}
+.as h2{
+  font: 36px 'ProximaNovaBlack';
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3.5px;
+  margin-bottom: 20px;
+}
+.as span{
+  font: 20px 'ProximaNovaLight';
+  text-align: center;
+  display: block;
+  letter-spacing: 0.6px;
+}
+.as span b{
+  font: 20px 'ProximaNovaBold';
+}
+.as ul{
+  text-align: center;
+  margin-top: 65px;
+  margin-bottom: 50px;
+}
+.as ul li{
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  width: 24%;
+  position: relative;
+}
+.as ul li:after{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 100px;
+  left: -13px;
+  background: url(../img/left.png) no-repeat center;
+  width: 27px;
+  height: 23px;
+}
+.as ul li:first-child:after{
+  display: none;
+}
+.as ul li .obertka{
+  display: block;
+  width: 300px;
+  height: 230px;
+  overflow: hidden;
+  border-radius: 150px;
+  margin: 0 auto 45px;
+}
+.as ul li .obertka img{
+  object-fit: cover;
+}
+.as ul li p{
+  font: 16px 'ProximaNovaRegular';
+  line-height: 23px;
+  max-width: 240px;
+  margin: 0 auto 7px;
+}
+.as ul li strong{
+  font: 16px 'ProximaNovaBold';
+}
+.as ul li a{
+  font: 25px 'ProximaNovaBold';
+  color: #000;
+}
+.as a.more{
+  display: block;
+  padding: 0;
+  background: linear-gradient(to top, #fdd143, #fff179);
+  font: 18px 'ProximaNovaBold';
+  text-align: center;
+  padding: 23px 0;
+  border-radius: 5px;
+  box-shadow: 0px 3px 0px 0px rgba(204,161,22,0.9),  0px 24px 22px -10px rgba(0,0,0,1);
+  -webkit-box-shadow: 0px 3px 0px 0px rgba(204,161,22,0.9),  0px 24px 22px -10px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 3px 0px 0px rgba(204,161,22,0.9),  0px 24px 22px -10px rgba(0,0,0,1);
+  position: relative;
+  margin-top: 10px;
+  letter-spacing: 1px;
+  width: 369px;
+  color: #000;
+  margin: 28px auto 0;
+}
+.as a.more span{
+  width: 98%;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  left: 3px;
+  top: 1px;
+}
+.reservation{
+  background: url(../img/reservation.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 90px;
+  padding-bottom: 85px;
+  text-align: center;
+}
+.reservation h3{
+  font: 36px 'ProximaNovaBlack';
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 3.5px;
+  margin-bottom: 20px;
+}
+.reservation p{
+  color: #ffed73;
+  font: 20px 'ProximaNovaLight';
+  letter-spacing: 0.7px;
+  border: 1px solid #ffed73;
+  padding: 7px;
+  max-width: 665px;
+  margin: 0 auto;
+}
+.reservation p span{
+  color: #ffed73;
+  font: 20px 'ProximaNovaRegularItalic';
+}
+.reservation p b{
+  color: #ffed73;
+  font: 25px 'ProximaNovaRegularItalic';
+  text-decoration: underline;
+}
+.reservation h2{
+  font: 55px 'ProximaNovaBlack';
+  text-transform: uppercase;
+  max-width: 815px;
+  margin: 57px auto 43px;
+  color: #ffe388;
+  letter-spacing: 5.5px;
+  line-height: 64px;
+}
+.reservation h2 span{
+  font: 55px 'ProximaNovaBlack';
+  color: #ff1200;
+}
+.reservation .calendar label{
+  position: relative;
+}
+.reservation .calendar label:after{
+  content: "";
+  display: block;
+  background: url(../img/calendar.png);
+  position: absolute;
+  width: 18px;
+  height: 19px;
+  top: -2px;
+  right: 15px;
+}
+.reservation .calendar input{
+  font: 16px 'ProximaNovaRegular';
+  color: #525252;
+  background: #fff;
+  margin-left: 15px;
+  padding: 15px 18px 15px 18px;
+  position: relative;
+  width: 160px;
+}
+.reservation .calendar{
+  display: inline-block;
+}
+.reservation .jq-selectbox{
+  margin-left: 10px;
+  text-align: left;
+}
+.reservation a.more{
+  display: block;
+  padding: 0;
+  background: linear-gradient(to top, #fdd143, #fff179);
+  font: 18px 'ProximaNovaBold';
+  text-align: center;
+  padding: 23px 0;
+  border-radius: 5px;
+  box-shadow: 0px 3px 0px 0px rgba(204,161,22,0.9),  0px 24px 22px -10px rgba(0,0,0,1);
+  -webkit-box-shadow: 0px 3px 0px 0px rgba(204,161,22,0.9),  0px 24px 22px -10px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 3px 0px 0px rgba(204,161,22,0.9),  0px 24px 22px -10px rgba(0,0,0,1);
+  position: relative;
+  letter-spacing: 1px;
+  width: 369px;
+  color: #000;
+  margin: 22px auto 0;
+  border: none;
+  outline: none;
+}
+.reservation a.more:hover{
+  cursor: pointer;
+}
+.reservation a.more span{
+  width: 98%;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  left: 3px;
+  top: 1px;
+}
+.reservation a.more:after{
+  display: none;
+}
+.reservation i{
+  font: 20px 'ProximaNovaRegular';
+  text-align: center;
+  display: block;
+  color: #fff;
+  margin-top: 47px;
+}
+.reservation a.tel{
+  text-align: center;
+  font: 36px 'ProximaNovaBlack';
+  color: #fff;
+  letter-spacing: 4px;
+}
+#map {
+  height: 505px;
+  width: 100%;
+}
+.gm-style-iw * {
+  display: block;
+  width: 100%;
+}
+.gm-style-iw h4, .gm-style-iw p {
+  margin: 0;
+  padding: 0;
+}
+.gm-style-iw a {
+  color: #4272db;
+}
+.up{
+  position: relative;
+}
+.up .address{
+  position: absolute;
+  top: 67px;
+  left: 95px;
+  width: 436px;
+  background: #fff;
+  padding-top: 72px;
+  padding-left: 28px;
+  padding-bottom: 90px;
+}
+.up .address span{
+  font: 20px 'ProximaNovaRegular';
+  letter-spacing: 0.5px;
+}
+.up .address p{
+  font: 24px 'ProximaNovaBold';
+  text-transform: uppercase;
+  margin-top: 7px;
+  margin-bottom: 25px;
+  letter-spacing: 2.5px;
+  line-height: 28px;
+}
+.up .address a{
+  font: 36px 'ProximaNovaBlack';
+  color: #000;
+  letter-spacing: 6px;
+}
+.footer .info{
+  background: #000;
+  padding-top: 15px;
+  padding-bottom: 35px;
+}
+.footer .info .logo li{
+  display: inline-block;
+  vertical-align: top;
+}
+.footer .info .logo li a{
+  margin-left: 17px;
+}
+.footer .info .logo li p{
+  font: 16px 'ProximaNovaRegular';
+  color: #fff;
+  max-width: 260px;
+  margin-top: 25px;
+  margin-left: 40px;
+  letter-spacing: 1px;
+}
+.footer .info .logo li p strong{
+  font: 14px 'ProximaNovaLight';
+  letter-spacing: 3px;
+}
+.footer .info .adress{
+  float: right;
+  margin-top: 22px;
+  text-align: right;
+}
+.footer .info .adress li{
+  display: inline-block;
+  vertical-align: top;
+}
+.footer .info .adress li p{
+  font: 14px 'ProximaNovaRegular';
+  color: #fff;
+  margin-right: 45px;
+  letter-spacing: 0.6px;
+}
+.footer .info .adress li p a:first-child{
+  display: block;
+  color: #fff;
+  font: 24px 'ProximaNovaBlack';
+  letter-spacing: 2px;
+}
+.footer .info .adress li p a:nth-child(2){
+  color: #f3e56f;
+  font: 14px 'ProximaNovaRegular';
+  border-bottom: 1px dashed #f3e56f;
+}
+.footer .info .adress li p a:nth-child(2):hover{
+  color: #fff;
+}
+.footer .info .adress li:nth-child(2) a{
+  margin-right: 11px;
+}
+.b-popap{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: rgba(0,0,0,0.84);
+  display: none;
+  z-index: 9999;
+}
+.popap{
+  background-color: #ff8400;
+  width: 630px;
+  height: 545px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  padding: 67px 0;
+  text-align: center;
+}
+.popap span{
+  position: absolute;
+  top: 8px;
+  right: 10px;
+}
+.popap span:hover{
+  cursor: pointer;
+}
+.popap h2{
+  margin-top: 0;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 3px;
+  font: 36px 'ProximaNovaBlack';
+  letter-spacing: 4px;
+}
+.popap p{
+  font: 20px 'ProximaNovaLight';
+  color: #fff;
+  letter-spacing: 0.5px;
+  margin-bottom: 45px;
+}
+.popap input{
+  display: block;
+  width: 340px;
+  border: none;
+  padding: 20px;
+  margin: 0 auto 7px;
+  font: 15px 'Roboto-Light';
+  outline: none;
+  color: #000;
+  background: #fff;
+}
+.popap input[type="submit"]{
+  display: block;
+  padding: 0;
+  background: linear-gradient(to top, #fdd143, #fff179);
+  font: 18px 'ProximaNovaBold';
+  text-align: center;
+  padding: 23px 0;
+  border-radius: 5px;
+  box-shadow: 0px 3px 0px 0px rgba(204,161,22,0.9),  0px 24px 22px -10px rgba(0,0,0,1);
+  -webkit-box-shadow: 0px 3px 0px 0px rgba(204,161,22,0.9),  0px 24px 22px -10px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 3px 0px 0px rgba(204,161,22,0.9),  0px 24px 22px -10px rgba(0,0,0,1);
+  position: relative;
+  margin-top: 10px;
+  letter-spacing: 1px;
+  width: 345px;
+  color: #000;
+  margin: 15px auto 0;
+}
+.popap input[type="submit"]:hover{
+  cursor: pointer;
+}
+.popap form{
+  position: relative;
+}
+::-webkit-input-placeholder {color:#000;font: 16px 'ProximaNovaRegular';}
+::-moz-placeholder          {color:#000;font: 16px 'ProximaNovaRegular';}
+:-moz-placeholder           {color:#000;font: 16px 'ProximaNovaRegular';}
+:-ms-input-placeholder      {color:#000;font: 16px 'ProximaNovaRegular';}
+
+.b-popap2{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: rgba(0,0,0,0.84);
+  display: none;
+  z-index: 9999;
+}
+.popap2{
+  background-color: #ff8400;
+  width: 530px;
+  height: 545px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  padding: 35px 0;
+  text-align: center;
+}
+.popap2 span{
+  position: absolute;
+  top: 8px;
+  right: 10px;
+}
+.popap2 span:hover{
+  cursor: pointer;
+}
+.popap2 h2{
+  margin-top: 0;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 3px;
+  font: 36px 'ProximaNovaBlack';
+  letter-spacing: 4px;
+  margin-bottom: 15px;
+}
+.popap2 textarea{
+  display: block;
+  width: 340px;
+  border: none;
+  padding: 20px;
+  margin: 0 auto 7px;
+  font: 15px 'Roboto-Light';
+  outline: none;
+  color: #000;
+  background: #fff;
+  resize: none;
+}
+.popap2 input{
+  display: block;
+  width: 340px;
+  border: none;
+  padding: 20px;
+  margin: 0 auto 7px;
+  font: 15px 'Roboto-Light';
+  outline: none;
+  color: #000;
+  background: #fff;
+}
+.popap2 input[type="submit"]{
+  display: block;
+  padding: 0;
+  background: linear-gradient(to top, #fdd143, #fff179);
+  font: 18px 'ProximaNovaBold';
+  text-align: center;
+  padding: 23px 0;
+  border-radius: 5px;
+  box-shadow: 0px 3px 0px 0px rgba(204,161,22,0.9),  0px 24px 22px -10px rgba(0,0,0,1);
+  -webkit-box-shadow: 0px 3px 0px 0px rgba(204,161,22,0.9),  0px 24px 22px -10px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 3px 0px 0px rgba(204,161,22,0.9),  0px 24px 22px -10px rgba(0,0,0,1);
+  position: relative;
+  margin-top: 10px;
+  letter-spacing: 1px;
+  width: 345px;
+  color: #000;
+  margin: 15px auto 0;
+  text-transform: uppercase;
+}
+.popap2 input[type="submit"]:hover{
+  cursor: pointer;
+}
+.popap2 form{
+  position: relative;
+}
+.b-popap3{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: rgba(0,0,0,0.84);
+    display: none;
+  z-index: 9999;
+}
+.popap3{
+  background-color: #ff8400;
+  width: 630px;
+  height: 545px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  padding: 67px 0;
+  text-align: center;
+}
+.popap3 span{
+  position: absolute;
+  top: 8px;
+  right: 10px;
+}
+.popap3 span:hover{
+  cursor: pointer;
+}
+.popap3 h2{
+  margin-top: 0;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 3px;
+  font: 36px 'ProximaNovaBlack';
+  letter-spacing: 4px;
+}
+.popap3 p{
+  font: 20px 'ProximaNovaLight';
+  color: #fff;
+  letter-spacing: 0.5px;
+  border: none; 
+  padding: 0 !important; 
+  max-width: 100% !important; 
+  margin: 0 auto 45px !important; 
+}
+.popap3 input{
+  display: block;
+  width: 340px !important;
+  border: none;
+  padding: 20px !important;
+  margin: 0 auto 7px !important;
+  font: 15px 'Roboto-Light' !important;
+  outline: none;
+  color: #000 !important;
+  background: #fff !important;
+}
+.popap3 input[type="submit"]{
+  display: block;
+  background: linear-gradient(to top, #fdd143, #fff179) !important;
+  font: 18px 'ProximaNovaBold' !important;
+  text-align: center;
+  padding: 23px 0 !important;
+  border-radius: 5px;
+  box-shadow: 0px 3px 0px 0px rgba(204,161,22,0.9),  0px 24px 22px -10px rgba(0,0,0,1) !important;
+  -webkit-box-shadow: 0px 3px 0px 0px rgba(204,161,22,0.9),  0px 24px 22px -10px rgba(0,0,0,1) !important;
+  -moz-box-shadow: 0px 3px 0px 0px rgba(204,161,22,0.9),  0px 24px 22px -10px rgba(0,0,0,1) !important;
+  position: relative;
+  letter-spacing: 1px;
+  width: 345px !important;
+  color: #000 !important;
+  margin: 15px auto 0 !important;
+}
+.popap3 input[type="submit"]:hover{
+  cursor: pointer;
+}
+.popap3 form{
+  position: relative;
+}
+::-webkit-input-placeholder {color:#000;font: 16px 'ProximaNovaRegular';}
+::-moz-placeholder          {color:#000;font: 16px 'ProximaNovaRegular';}
+:-moz-placeholder           {color:#000;font: 16px 'ProximaNovaRegular';}
+:-ms-input-placeholder      {color:#000;font: 16px 'ProximaNovaRegular';}
+
+.b-popap4{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: rgba(0,0,0,0.84);
+  display: none;
+  z-index: 9999;
+}
+.popap4{
+  background-color: #ff8400;
+  width: 630px;
+  height: 545px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  padding: 67px 0;
+  text-align: center;
+}
+.popap4 span{
+  position: absolute;
+  top: 8px;
+  right: 10px;
+}
+.popap4 span:hover{
+  cursor: pointer;
+}
+.popap4 h2{
+  margin-top: 0;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 3px;
+  font: 36px 'ProximaNovaBlack';
+  letter-spacing: 4px;
+}
+.popap4 p{
+  font: 20px 'ProximaNovaLight';
+  color: #fff;
+  letter-spacing: 0.5px;
+  border: none; 
+  padding: 0 !important; 
+  max-width: 100% !important; 
+  margin: 0 auto 45px !important; 
+}
+.popap4 input{
+  display: block;
+  width: 340px !important;
+  border: none;
+  padding: 20px !important;
+  margin: 0 auto 7px !important;
+  font: 15px 'Roboto-Light' !important;
+  outline: none;
+  color: #000 !important;
+  background: #fff !important;
+}
+.popap4 input[type="submit"]{
+  display: block;
+  background: linear-gradient(to top, #fdd143, #fff179) !important;
+  font: 18px 'ProximaNovaBold' !important;
+  text-align: center;
+  padding: 23px 0 !important;
+  border-radius: 5px;
+  box-shadow: 0px 3px 0px 0px rgba(204,161,22,0.9),  0px 24px 22px -10px rgba(0,0,0,1) !important;
+  -webkit-box-shadow: 0px 3px 0px 0px rgba(204,161,22,0.9),  0px 24px 22px -10px rgba(0,0,0,1) !important;
+  -moz-box-shadow: 0px 3px 0px 0px rgba(204,161,22,0.9),  0px 24px 22px -10px rgba(0,0,0,1) !important;
+  position: relative;
+  letter-spacing: 1px;
+  width: 345px !important;
+  color: #000 !important;
+  margin: 15px auto 0 !important;
+}
+.popap4 input[type="submit"]:hover{
+  cursor: pointer;
+}
+.popap4 form{
+  position: relative;
+}
+.b-popap5{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: rgba(0,0,0,0.84);
+    display: none;
+  z-index: 9999;
+}
+.popap5{
+  background-color: #ff8400;
+  width: 630px;
+  height: 545px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  padding: 67px 0;
+  text-align: center;
+}
+.popap5 span{
+  position: absolute;
+  top: 8px;
+  right: 10px;
+}
+.popap5 span:hover{
+  cursor: pointer;
+}
+.popap5 h2{
+  margin-top: 0;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 3px;
+  font: 36px 'ProximaNovaBlack';
+  letter-spacing: 4px;
+}
+.popap5 p{
+  font: 20px 'ProximaNovaLight';
+  color: #fff;
+  letter-spacing: 0.5px;
+  border: none; 
+  padding: 0 !important; 
+  max-width: 100% !important; 
+  margin: 0 auto 45px !important; 
+}
+.popap5 input{
+  display: block;
+  width: 340px !important;
+  border: none;
+  padding: 20px !important;
+  margin: 0 auto 7px !important;
+  font: 15px 'Roboto-Light' !important;
+  outline: none;
+  color: #000 !important;
+  background: #fff !important;
+}
+.popap5 input[type="submit"]{
+  display: block;
+  background: linear-gradient(to top, #fdd143, #fff179) !important;
+  font: 18px 'ProximaNovaBold' !important;
+  text-align: center;
+  padding: 23px 0 !important;
+  border-radius: 5px;
+  box-shadow: 0px 3px 0px 0px rgba(204,161,22,0.9),  0px 24px 22px -10px rgba(0,0,0,1) !important;
+  -webkit-box-shadow: 0px 3px 0px 0px rgba(204,161,22,0.9),  0px 24px 22px -10px rgba(0,0,0,1) !important;
+  -moz-box-shadow: 0px 3px 0px 0px rgba(204,161,22,0.9),  0px 24px 22px -10px rgba(0,0,0,1) !important;
+  position: relative;
+  letter-spacing: 1px;
+  width: 345px !important;
+  color: #000 !important;
+  margin: 15px auto 0 !important;
+}
+.popap5 input[type="submit"]:hover{
+  cursor: pointer;
+}
+.popap5 form{
+  position: relative;
+}
+.change{
+  height: 168px;
+  max-width: 100%;
+}
+.cars{
+  text-align: center;
+  display: inline-block;
+  width: 33%;
+}
+#datepicker:hover{
+  cursor: pointer;
+}
+.ui-datepicker{
+	z-index: 111 !important;
+}
+.thanks_in {
+  /*display: none;*/ 
+  position: fixed; 
+  top: 50%;
+  left: 0px;
+  right: 0;
+  bottom: 0;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+}
+.thanks_in h2{
+  text-align: center;
+  display: block;
+  font: 40px 'ProximaNovaRegular';
+  background-color: #fff;
+  width: 200px;
+  margin: 0 auto;
+  color: #ff8500;
+  border-radius: 5px;
+  padding: 15px;
+}
+.thanks{
+  width:100%;
+  min-height:100%;
+  background-color: rgba(0,0,0,0.9);
+  overflow:hidden;
+  position:fixed;
+  z-index: 666;
+  top: 0px;
+  text-align: center;
+  display: none;
+
+}
+
+@media(min-width: 1024px) and (max-width: 1200px){
+  .wrapper{
+    width: 90%;
+    overflow: hidden;
+    padding-bottom: 20px;
+  }
+  .wrapper2{
+    width: 90%;
+  }
+  .header .menu ul li{
+    width: 12%;
+    vertical-align: middle;
+  }
+  .booking .wrapper2 img[alt='car']{
+    position: absolute;
+  }
+  .booking .wrapper2 .right{
+    position: absolute;
+    right: 10px;
+  }
+  .lists{
+    padding-top: 200px;
+  }
+  .lists ul li{
+    width: 30.5%;
+  }
+  .lists ul li .obertka{
+    width: 100%;
+  }
+  .lists ul li .obertka img{
+    width: 100%;
+  }
+  .rooms ul li{
+    width: 29.5%;
+    margin-bottom: 30px;
+  }
+  .rooms ul li .obertka{
+    width: 100%;
+  }
+  .rooms ul li .obertka img{
+    width: 100%;
+  }
+  .details ul.selection li{
+    margin-bottom: 35px;
+    margin-right: 50px;
+  }
+  .book h2 span{
+    display: block;
+    width: 275px;
+    margin: 10px auto 0;
+  }
+  .free .wrapper{
+    overflow: inherit;
+  }
+  .reviews li p{
+    height: 230px;
+  }
+  .as ul li{
+    width: 32%;
+    margin-bottom: 30px;
+  }
+  .as ul li:after{
+    display: none;
+  }
+  .cars{
+    width: 37%;
+  }
+  .header .info{
+    padding-top: 80px;
+  }
+}
+@media(min-width: 800px) and (max-width: 1023px){
+  .wrapper{
+    width: 90%;
+    overflow: hidden;
+    padding-bottom: 20px;
+  }
+  .wrapper2{
+    width: 95%;
+  }
+  .header .menu{
+    padding-bottom: 0;
+  }
+  .header .menu ul li{
+    width: 19%;
+    vertical-align: middle;
+    margin-bottom: 20px;
+  }
+  .header .info .adress{
+    float: none;
+    text-align: center;
+    margin-bottom: 30px
+  }
+  .header .info .logo{
+    text-align: center;
+  }
+  .header .wrapper h1{
+    font: 53px 'ProximaNovaBlack';
+  }
+  .booking .wrapper2{
+    padding: 45px 0px 40px 20px;
+  }
+  .booking .wrapper2 img[alt='car']{
+    position: absolute;
+    left: 20%;
+    z-index: -1;
+  }
+  .booking .wrapper2 strong{
+    max-width: 350px;
+  }
+  .booking .wrapper2 .right{
+    position: absolute;
+    right: 0px;
+  }
+  .lists{
+    padding-top: 170px;
+  }
+  .lists ul li{
+    width: 48.5%;
+  }
+  .lists ul li .obertka{
+    width: 100%;
+  }
+  .lists ul li .obertka img{
+    width: 100%;
+  }
+  .statistics ul li{
+    width: 32%;
+    margin-bottom: 40px;
+  }
+  .rooms ul li{
+    width: 45.5%;
+    margin-bottom: 30px;
+  }
+  .rooms ul li .obertka{
+    width: 100%;
+  }
+  .rooms ul li .obertka img{
+    width: 100%;
+  }
+  .details ul.selection li{
+    margin-bottom: 35px;
+    margin-right: 50px;
+  }
+  .details ul.foto li{
+    width: 48%;
+  }
+  .beside ul li{
+    width: 48%;
+    margin-bottom: 40px;
+  }
+  .book h2 span{
+    display: block;
+    width: 275px;
+    margin: 10px auto 0;
+  }
+  .book .calendar{
+    margin-bottom: 40px;
+  }
+  .free .wrapper{
+    overflow: inherit;
+  }
+  .free .get{
+    padding-left: 0;
+    text-align: center;
+  }
+  .free .get ul li{
+    width: 44%;
+    position: relative;
+    z-index: 2;
+  }
+  .free .get ul li i{
+    text-align: left;
+  }
+  .free .get:after{
+    right: -114px;
+    width: 300px;
+  }
+  .reviews li p{
+    height: 290px;
+  }
+  .flex-direction-nav .flex-prev, .flex-direction-nav .flex-next{
+    top: 523px;
+  }
+  .as ul li{
+    width: 42%;
+    margin-bottom: 30px;
+  }
+  .as ul li:after{
+    display: none;
+  }
+  .reservation .calendar{
+    margin-bottom: 40px;
+  }
+  .footer .info .adress{
+    float: none;
+    text-align: center;
+    margin-bottom: 30px
+  }
+  .footer .info .logo{
+    text-align: center;
+  }
+  .popap{
+    width: 530px;
+    height: 505px;
+    padding: 27px 0;
+  }
+  .popap input[type="submit"]{
+    margin: 25px auto 0;
+  }
+  .popap2{
+    width: 530px;
+    height: 525px;
+    padding: 5px 10px;
+  }
+  .popap2 input[type="submit"]{
+    margin: 25px auto 0;
+  }
+  .cars{
+    width: 39%;
+  }
+  .header .info{
+    padding-top: 105px;
+  }
+}
+@media(min-width: 640px) and (max-width: 799px){
+  .wrapper{
+    width: 90%;
+    overflow: hidden;
+    padding-bottom: 20px;
+  }
+  .wrapper2{
+    width: 95%;
+  }
+  .header .menu{
+    padding-bottom: 0;
+  }
+  .header .menu ul li{
+    width: 24%;
+    vertical-align: middle;
+    margin-bottom: 20px;
+  }
+  .header .info .adress{
+    float: none;
+    text-align: center;
+    margin-bottom: 30px
+  }
+  .header .info .logo{
+    text-align: center;
+  }
+  .header .wrapper h1{
+    font: 40px 'ProximaNovaBlack';
+  }
+  .header .wrapper span.price{
+    font: 37px 'ProximaNovaBlack';
+  }
+  .booking .wrapper2{
+    padding: 45px 0px 40px 20px;
+    bottom: -462px;
+  }
+  .booking .wrapper2 img[alt='car']{
+    position: absolute;
+    left: 20%;
+    z-index: -1;
+    top: 37%;
+    margin-top: 0;
+  }
+  .booking .wrapper2 strong{
+    max-width: 350px;
+    margin: 0 auto;
+  }
+  .booking .wrapper2 .left{
+    display: block;
+    text-align: center;
+    margin-bottom: 20px
+  }
+  .booking .wrapper2 .right{
+    position: static;
+    text-align: center;
+    margin-left: 0;
+    display: block;
+    margin-top: 40px;
+  }
+  .booking .wrapper2 input[type='submit']:nth-child(3){
+    width: 325px;
+    margin: 20px auto 0;
+  }
+  .lists{
+    padding-top: 550px;
+  }
+  .lists ul li{
+    width: 48.5%;
+  }
+  .lists ul li .obertka{
+    width: 100%;
+  }
+  .lists ul li .obertka img{
+    width: 100%;
+  }
+  .statistics h2{
+    font: 36px 'ProximaNovaBlack';
+  }
+  .statistics ul li{
+    width: 43%;
+    margin-bottom: 40px;
+  }
+  .rooms ul li{
+    width: 45.5%;
+    margin-bottom: 30px;
+  }
+  .rooms ul li .obertka{
+    width: 100%;
+  }
+  .rooms ul li .obertka img{
+    width: 100%;
+  }
+  .details h2{
+    font: 31px 'ProximaNovaBlack';
+  }
+  .details ul.selection li{
+    margin-bottom: 35px;
+    margin-right: 35px;
+  }
+  .details ul.foto li{
+    width: 48%;
+  }
+  .beside ul li{
+    width: 48%;
+    margin-bottom: 40px;
+  }
+  .book h2 span{
+    display: block;
+    width: 275px;
+    margin: 10px auto 0;
+  }
+  .book .calendar{
+    margin-bottom: 40px;
+  }
+  .free p{
+    font: 17px 'ProximaNovaLight';
+  }
+  .free .wrapper{
+    overflow: inherit;
+  }
+  .free .get{
+    padding-left: 0;
+    text-align: center;
+    width: 100%;
+    margin-left: 0;
+  }
+  .free .get ul li{
+    width: 44%;
+    position: relative;
+    z-index: 2;
+  }
+  .free .get ul li i{
+    text-align: left;
+  }
+  .free .get:after{
+    display: none;
+  }
+  .reviews li p{
+    height: 300px;
+    font: 18px 'ProximaNovaRegular';
+  }
+  .flex-direction-nav .flex-prev, .flex-direction-nav .flex-next{
+    top: 523px;
+  }
+  .as span{
+    font: 16px 'ProximaNovaLight';
+  }
+  .as ul li{
+    width: 48%;
+    margin-bottom: 30px;
+  }
+  .as ul li:after{
+    display: none;
+  }
+  .reservation h2{
+    font: 45px 'ProximaNovaBlack';
+  }
+  .reservation .calendar{
+    margin-bottom: 40px;
+  }
+  .footer .info .adress{
+    float: none;
+    text-align: center;
+    margin-bottom: 30px
+  }
+  .footer .info .logo{
+    text-align: center;
+  }
+  .popap{
+    width: 530px;
+    height: 445px;
+    padding: 35px 10px;
+  }
+  .popap input[type="submit"]{
+    margin: 10px auto 0;
+  }
+  .popap p{
+    margin-bottom: 10px;
+  }
+  .popap2{
+    width: 530px;
+    height: 525px;
+    padding: 5px 10px;
+  }
+  .popap2 input[type="submit"]{
+    margin: 25px auto 0;
+  }
+  .cars{
+    width: 100%;
+  }
+  .header .info{
+    padding-top: 105px;
+  }
+}
+@media(min-width: 480px) and (max-width: 639px){
+  .wrapper{
+    width: 90%;
+    overflow: hidden;
+    padding-bottom: 20px;
+  }
+  .wrapper2{
+    width: 95%;
+  }
+  .header .menu{
+    padding-bottom: 0;
+  }
+  .header .menu ul li{
+    width: 32%;
+    vertical-align: middle;
+    margin-bottom: 20px;
+  }
+  .header .info .adress{
+    float: none;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .header .info .adress li p{
+    margin-right: 5px;
+  }
+  .header .info .adress li:nth-child(2) a{
+    margin-right: 7px;
+  }
+  .header .info .logo{
+    text-align: center;
+  }
+  .header .info .logo li a{
+    margin-left: 0;
+  }
+  .header .info .logo li p{
+    margin-left: 0;
+    margin-top: 15px;
+  }
+  .header .wrapper h1{
+    font: 29px 'ProximaNovaBlack';
+    margin-top: 25px;
+  }
+  .header .wrapper span.price{
+    font: 25px 'ProximaNovaBlack';
+  }
+  .header .wrapper h2{
+    font: 22px 'ProximaNovaRegular';
+  }
+  .booking .wrapper2{
+    padding: 45px 0px 40px 20px;
+    bottom: -450px;
+  }
+  .booking .wrapper2 img[alt='car']{
+    position: absolute;
+    left: 7%;
+    z-index: -1;
+    top: 37%;
+    margin-top: 0;
+  }
+  .booking .wrapper2 strong{
+    max-width: 350px;
+    margin: 0 auto;
+  }
+  .booking .wrapper2 .left{
+    display: block;
+    text-align: center;
+    margin-bottom: 20px
+  }
+  .booking .wrapper2 .right{
+    position: static;
+    text-align: center;
+    margin-left: 0;
+    display: block;
+    margin-top: 40px;
+  }
+  .booking .wrapper2 input[type='submit']:nth-child(3){
+    width: 325px;
+    margin: 20px auto 0;
+  }
+  .lists{
+    padding-top: 565px;
+  }
+  .lists ul li{
+    width: 95%;
+  }
+  .lists ul li .obertka{
+    width: 100%;
+  }
+  .lists ul li .obertka img{
+    width: 100%;
+  }
+  .statistics h2{
+    font: 36px 'ProximaNovaBlack';
+  }
+  .statistics ul li{
+    width: 48%;
+    margin-bottom: 40px;
+  }
+  .rooms p{
+    line-height: 24px;
+  }
+  .rooms ul li{
+    width: 100%;
+    margin-bottom: 30px;
+    margin-right: 0;
+  }
+  .rooms ul li .obertka{
+    width: 100%;
+  }
+  .rooms ul li .obertka img{
+    width: 100%;
+  }
+  .details h2{
+    font: 31px 'ProximaNovaBlack';
+  }
+  .details ul.selection li{
+    margin-bottom: 35px;
+    margin-right: 15px;
+  }
+  .details ul.foto li{
+    width: 100%;
+  }
+  .beside ul li{
+    width: 90%;
+    margin-bottom: 40px;
+  }
+  .book h2 span{
+    display: block;
+    width: 275px;
+    margin: 10px auto 0;
+  }
+  .book .calendar{
+    margin-bottom: 40px;
+  }
+  .free h2{
+    font: 32px 'ProximaNovaBlack';
+  }
+  .free p{
+    font: 17px 'ProximaNovaLight';
+  }
+  .free .wrapper{
+    overflow: inherit;
+  }
+  .free .get{
+    padding-left: 0;
+    text-align: center;
+    width: 100%;
+    margin-left: 0;
+  }
+  .free .get ul li{
+    width: 82%;
+    position: relative;
+    z-index: 2;
+  }
+  .free .get ul li i{
+    text-align: left;
+  }
+  .free .get:after{
+    display: none;
+  }
+  .clients h2{
+    font: 29px 'ProximaNovaBlack';
+  }
+  .clients p{
+    font: 22px 'ProximaNovaRegular';
+  }
+  .reviews h2{
+    font: 34px 'ProximaNovaBlack';
+  }
+  .reviews ul.slides li ul li{
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  .reviews li p{
+    height: 210px;
+    font: 18px 'ProximaNovaRegular';
+  }
+  .flex-direction-nav .flex-prev, .flex-direction-nav .flex-next{
+    top: 453px;
+  }
+  .flex-control-nav{
+    bottom: 0;
+  }
+  .as span{
+    font: 15px 'ProximaNovaLight';
+  }
+  .as ul li{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .as ul li:after{
+    display: none;
+  }
+  .as ul li .obertka{
+    margin: 0 auto 15px;
+  }
+  .reservation h2{
+    font: 38px 'ProximaNovaBlack';
+  }
+  .reservation h2 span{
+    font: 40px 'ProximaNovaBlack';
+  }
+  .reservation .calendar{
+    margin-bottom: 40px;
+  }
+  .up .address{
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  .footer .info .adress{
+    float: none;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .footer .info .adress li p{
+    margin-right: 5px;
+  }
+  .footer .info .adress li:nth-child(2) a{
+    margin-right: 7px;
+  }
+  .footer .info .logo{
+    text-align: center;
+  }
+  .footer .info .logo li a{
+    margin-left: 0;
+  }
+  .footer .info .logo li p{
+    margin-left: 0;
+    margin-top: 15px;
+  }
+  .popap{
+    width: 430px;
+    height: 455px;
+    padding: 10px 10px;
+  }
+  .popap input[type="submit"]{
+    margin: 10px auto 0;
+  }
+  .popap h2{
+    font: 30px 'ProximaNovaBlack';
+  }
+  .popap p{
+    font: 19px 'ProximaNovaLight';
+    margin-bottom: 10px;
+  }
+  .popap span{
+    top: -2px;
+    right: -2px;
+  }
+  .popap2{
+    width: 430px;
+    height: 525px;
+    padding: 5px 10px;
+  }
+  .popap2 input[type="submit"]{
+    margin: 25px auto 0;
+  }
+  .popap2 h2{
+    font: 30px 'ProximaNovaBlack';
+  }
+  .cars{
+    width: 100%;
+  }
+  .header .info{
+    padding-top: 150px;
+  }
+}
+@media(min-width: 320px) and (max-width: 479px){
+  .wrapper{
+    width: 90%;
+    overflow: hidden;
+    padding-bottom: 20px;
+  }
+  .wrapper2{
+    width: 95%;
+  }
+  .header .menu{
+    padding-bottom: 0;
+    display: none;
+  }
+  .header .menu ul li{
+    width: 48%;
+    vertical-align: middle;
+    margin-bottom: 20px;
+  }
+  .header .info .adress li{
+    margin-bottom: 20px;
+  }
+  .header .info .adress{
+    float: none;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .header .info .adress li p{
+    margin-right: 5px;
+  }
+  .header .info .adress li:nth-child(2) a{
+    margin-right: 7px;
+  }
+  .header .info .logo{
+    text-align: center;
+  }
+  .header .info .logo li a{
+    margin-left: 0;
+  }
+  .header .info .logo li p{
+    margin-left: 0;
+    margin-top: 15px;
+  }
+  .header .wrapper h1{
+    font: 27px 'ProximaNovaBlack';
+    margin-top: 25px;
+  }
+  .header .wrapper span.price{
+    font: 23px 'ProximaNovaBlack';
+  }
+  .header .wrapper h2{
+    font: 22px 'ProximaNovaRegular';
+  }
+  .booking .wrapper2{
+    padding: 45px 0px 40px 0px;
+    bottom: -583px;
+    background: #fff;
+  }
+  .booking .wrapper2 img[alt='car']{
+    display: none;
+  }
+  .booking .wrapper2 input[type='submit']{
+    display: block;
+    width: 90%;
+    margin: 0 auto 20px;
+  }
+  .booking .wrapper2 strong{
+    max-width: 320px;
+    margin: 0 auto;
+    font: 17px 'ProximaNovaBold';
+  }
+  .booking .wrapper2 .left{
+    display: block;
+    text-align: center;
+    margin-bottom: 20px
+  }
+  .jq-selectbox__select{
+    width: 260px;
+  }
+  .booking .wrapper2 .right{
+    position: static;
+    text-align: center;
+    margin-left: 0;
+    display: block;
+    margin-top: 40px;
+  }
+  .booking .wrapper2 input[type='submit']:nth-child(3){
+    width: 235px;
+    margin: 9px auto 0;
+    font: 13px 'ProximaNovaBold';
+  }
+  .lists{
+    padding-top: 665px;
+    padding-bottom: 20px;
+  }
+  .lists ul li{
+    width: 95%;
+  }
+  .lists ul li .obertka{
+    width: 100%;
+  }
+  .lists ul li .obertka img{
+    width: 100%;
+  }
+  .statistics h2{
+    font: 30px 'ProximaNovaBlack';
+  }
+  .statistics p{
+    font: 20px 'ProximaNovaLight';
+  }
+  .statistics ul{
+    margin-top: 40px;
+  }
+  .statistics ul li{
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .rooms p{
+    line-height: 24px;
+    font: 16px 'ProximaNovaLight';
+  }
+  .rooms a.more{
+    font: 15px 'ProximaNovaBold';
+    width: 269px;
+  }
+  .rooms ul li{
+    width: 100%;
+    margin-bottom: 30px;
+    margin-right: 0;
+  }
+  .rooms ul li .obertka{
+    width: 100%;
+  }
+  .rooms ul li .obertka img{
+    width: 100%;
+  }
+  .details h2{
+    font: 25px 'ProximaNovaBlack';
+  }
+  .details a.more{
+    width: 269px;
+  }
+  .details ul.selection li{
+    margin-bottom: 35px;
+    margin-right: 20px;
+  }
+  .details ul.foto li{
+    width: 100%;
+  }
+  .beside h2{
+    font: 28px 'ProximaNovaBlack';
+  }
+  .beside p{
+    font: 17px 'ProximaNovaLight';
+  }
+  .beside ul li{
+    width: 90%;
+    margin-bottom: 40px;
+  }
+  .book h2{
+    font: 25px 'ProximaNovaBlack';
+  }
+  .book h2 span{
+    display: block;
+    width: 250px;
+    margin: 10px auto 0;
+    font: 29px 'ProximaNovaBlack';
+  }
+  .book .calendar{
+    margin-bottom: 0px;
+  }
+  .book a{
+    display: block;
+    width: 230px;
+    margin-bottom: 20px;
+    margin-left: 0;
+  }
+  .book input[type='submit']{
+    font: 15px 'ProximaNovaBold';
+    width: 269px;
+    margin: 9px auto 0;
+    outline: none;
+  }
+  .free h2{
+    font: 32px 'ProximaNovaBlack';
+  }
+  .free p{
+    font: 17px 'ProximaNovaLight';
+  }
+  .free .wrapper{
+    overflow: inherit;
+  }
+  .free .get{
+    padding-left: 0;
+    text-align: center;
+    width: 100%;
+    margin-left: 0;
+  }
+  .free .get ul li{
+    width: 90%;
+    position: relative;
+    z-index: 2;
+  }
+  .free .get ul li i{
+    text-align: left;
+  }
+  .free .get:after{
+    display: none;
+  }
+  .clients h2{
+    font: 24px 'ProximaNovaBlack';
+  }
+  .clients span{
+    font: 17px 'ProximaNovaLight';
+  }
+  .clients p{
+    font: 18px 'ProximaNovaRegular';
+    margin-bottom: 40px;
+  }
+  .clients a{
+    font: 23px 'ProximaNovaBlack';
+  }
+  .reviews h2{
+    font: 34px 'ProximaNovaBlack';
+  }
+  .reviews ul.slides li ul li{
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  .reviews li p{
+    height: 310px;
+    font: 18px 'ProximaNovaRegular';
+  }
+  .reviews a.more{
+    width: 269px;
+  }
+  .flex-direction-nav .flex-prev, .flex-direction-nav .flex-next{
+    top: 556px;
+  }
+  .flex-control-nav{
+    bottom: 0;
+  }
+  .as span{
+    font: 15px 'ProximaNovaLight';
+  }
+  .as a.more{
+    width: 269px;
+  }
+  .as ul li{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .as ul li:after{
+    display: none;
+  }
+  .as ul li .obertka{
+    margin: 0 auto 15px;
+  }
+  .reservation h3{
+    font: 25px 'ProximaNovaBlack'
+  }
+  .reservation p{
+    font: 17px 'ProximaNovaLight';
+  }
+  .reservation h2{
+    font: 23px 'ProximaNovaBlack';
+  }
+  .reservation h2 span{
+    font: 30px 'ProximaNovaBlack';
+  }
+  .reservation .calendar{
+    margin-bottom: 0px;
+  }
+  .reservation .calendar a{
+    display: block;
+    width: 250px;
+    margin-bottom: 20px;
+    margin-left: 0;
+  }
+  .reservation input[type='submit']{
+    width: 269px;
+    font: 15px 'ProximaNovaBold';
+    margin-top: 9px;
+    outline: none;
+  }
+  .reservation a.tel{
+    letter-spacing: 2px;
+    font: 30px 'ProximaNovaBlack';
+  }
+  .up .address{
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 90%;
+  }
+  .up .address p{
+    font: 15px 'ProximaNovaBold';
+  }
+  .up .address a{
+    letter-spacing: 2px;
+    font: 24px 'ProximaNovaBlack'
+  }
+  .footer .info .adress li{
+    margin-bottom: 20px;
+  }
+  .footer .info .adress{
+    float: none;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .footer .info .adress li p{
+    margin-right: 5px;
+  }
+  .footer .info .adress li:nth-child(2) a{
+    margin-right: 7px;
+  }
+  .footer .info .logo{
+    text-align: center;
+  }
+  .footer .info .logo li a{
+    margin-left: 0;
+  }
+  .footer .info .logo li p{
+    margin-left: 0;
+    margin-top: 15px;
+  }
+  .popap{
+    width: 270px;
+    height: 475px;
+    padding: 47px 10px;
+  }
+  .popap input[type="submit"]{
+    margin: 25px auto 0;
+    width: 240px;
+    font: 14px 'ProximaNovaBold';
+  }
+  .popap input{
+    width: 240px;
+  }
+  .popap h2{
+    font: 18px 'ProximaNovaBlack';
+  }
+  .popap p{
+    font: 15px 'ProximaNovaLight';
+    margin-bottom: 15px;
+  }
+  iframe{
+    width: 245px;
+  }
+  #recaptcha1 div, #recaptcha2 div, #recaptcha3 div, #recaptcha4 div, #recaptcha5 div{
+    width: 245px !important;
+  }
+  #recaptcha1, #recaptcha2, #recaptcha3, #recaptcha4, #recaptcha5{
+    width: 245px;
+    margin: 0 auto;
+  }
+  .rc-anchor{
+    width: 245px;
+  }
+  .rc-anchor-normal{
+    width: 245px !important;
+  }
+  .rc-anchor-normal-footer{
+    margin-left: -100px !important;
+  }
+  .popap2{
+    width: 270px;
+    height: 505px;
+    padding: 15px 10px;
+  }
+  .popap2 input[type="submit"]{
+    margin: 25px auto 0;
+    width: 240px;
+    font: 14px 'ProximaNovaBold';
+  }
+  .popap2 input{
+    width: 240px;
+  }
+  .popap2 textarea{
+    width: 240px;
+  }
+  .popap2 h2{
+    font: 18px 'ProximaNovaBlack';
+    margin-bottom: 20px;
+  }
+  .popap2 span{
+    top: -2px;
+    right: -2px;
+  }
+  .cars{
+    width: 100%;
+  }
+  .header .info{
+    padding-top: 0px;
+  }
+  .rooms{
+    padding-bottom: 10px;
+    padding-top: 30px;
+  }
+  .details{
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+  .beside{
+    padding-top: 20px;
+    padding-bottom: 0;
+  }
+  .booking{
+    padding-bottom: 190px;
+  }
+  .statistics .ob{
+    padding-bottom: 20px;
+  }
+  .book{
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  .free{
+    padding-top: 30px;
+  }
+  .clients{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .reviews{
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  .as{
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  .reservation{
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  .booking .wrapper2 .right .jq-selectbox{
+    margin-top: 0px;
+  }
+  .booking .wrapper2 input{
+    margin-bottom: 9px;
+  }
+  .book input{
+    margin-bottom: 9px;
+  }
+  .book .right .jq-selectbox{
+    margin-top: 0px;
+  }
+  .reservation .calendar input{
+    margin-bottom: 9px;
+  }
+  .reservation .right .jq-selectbox{
+    margin-top: 0px;
+  }
+}
+
+.error{
+  color: red;
+}
+#recaptcha1, #recaptcha2, #recaptcha3, #recaptcha4, #recaptcha5{
+  width: 310px;
+  margin: 0 auto;
+}
+
+.details ul.foto li:nth-child(n+7) {display: none;}
+
+.statistics ul li span i{
+  font: 48px 'MullerBlackItalic';
+  background: linear-gradient(to top, #fdd041, #fff27a);
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+.booking label.error{
+  display: none !important;
+}
+.booking input.error{
+  outline: red !important;
+  border: 2px solid red !important;
+}
+.book label.error{
+  display: none !important;
+}
+.book input.error{
+  outline: red !important;
+  border: 2px solid red !important;
+}
+.reservation label.error{
+  display: none !important;
+}
+.reservation input.error{
+  outline: red !important;
+  border: 2px solid red !important;
+}
